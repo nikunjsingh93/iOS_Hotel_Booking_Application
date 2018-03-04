@@ -38,6 +38,14 @@ class DisplayBookingViewController: UIViewController {
         for test in bookArray {
             
             
+            let dateFormatter1 = DateFormatter()
+            dateFormatter1.dateFormat = "MM-dd-yyyy"
+            let dateString1 = dateFormatter1.string(from: test.roomObj.roomFrom!)
+            
+            let dateFormatter2 = DateFormatter()
+            dateFormatter2.dateFormat = "MM-dd-yyyy"
+            let dateString2 = dateFormatter2.string(from: test.roomObj.roomTo!)
+            
             someStrings.append("------")
             
             someStrings.append("Booking Name: \(test.bookingName!)")
@@ -49,8 +57,8 @@ class DisplayBookingViewController: UIViewController {
             
             
             someStrings.append("Room Name: \(test.roomObj.roomName!)")
-            someStrings.append("Room Booked From: \(test.roomObj.roomFrom!)")
-            someStrings.append("Room Booked Till: \(test.roomObj.roomTo!)")
+            someStrings.append("Room Booked From: \(dateString1)")
+            someStrings.append("Room Booked Till: \(dateString2)")
             someStrings.append("Room Price: \(test.roomObj.roomPrice!)")
             someStrings.append("Room Type: \(test.roomObj.roomType!)")
             someStrings.append("Other Customer Name: \(test.bokingOtherCust!)")
