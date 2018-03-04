@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F93B67BC2049F9E800DA3754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B67BB2049F9E800DA3754 /* AppDelegate.swift */; };
+		F93B67BE2049F9E800DA3754 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B67BD2049F9E800DA3754 /* ViewController.swift */; };
+		F93B67C32049F9E800DA3754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F93B67C22049F9E800DA3754 /* Assets.xcassets */; };
+		F93B67C62049F9E800DA3754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F93B67C42049F9E800DA3754 /* LaunchScreen.storyboard */; };
+		F93B67D12049F9E800DA3754 /* Assignment_6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B67D02049F9E800DA3754 /* Assignment_6Tests.swift */; };
+		F93B67DC2049F9E800DA3754 /* Assignment_6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B67DB2049F9E800DA3754 /* Assignment_6UITests.swift */; };
+		F93B67EA2049FA5900DA3754 /* Main.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93B67E92049FA5900DA3754 /* Main.xib */; };
+		F93B67EC2049FFE400DA3754 /* CreateCustViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B67EB2049FFE400DA3754 /* CreateCustViewController.swift */; };
+		F93B67EE204A007E00DA3754 /* CreateCustomer.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93B67ED204A007E00DA3754 /* CreateCustomer.xib */; };
+		F93B67F0204A247900DA3754 /* CreateRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B67EF204A247900DA3754 /* CreateRoomViewController.swift */; };
+		F93B67F2204A248F00DA3754 /* CreateRoom.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93B67F1204A248F00DA3754 /* CreateRoom.xib */; };
+		F93B67F4204A2EA000DA3754 /* CreateBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B67F3204A2EA000DA3754 /* CreateBookingViewController.swift */; };
+		F93B67F8204A33F400DA3754 /* CreateBooking.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93B67F7204A33F400DA3754 /* CreateBooking.xib */; };
+		F93B67FA204A367400DA3754 /* DisplayRoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B67F9204A367400DA3754 /* DisplayRoomsViewController.swift */; };
+		F93B67FC204A368500DA3754 /* DisplayRooms.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93B67FB204A368500DA3754 /* DisplayRooms.xib */; };
+		F93B67FE204A408800DA3754 /* DisplayBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B67FD204A408800DA3754 /* DisplayBookingViewController.swift */; };
+		F93B6800204A409B00DA3754 /* DisplayCustomersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B67FF204A409B00DA3754 /* DisplayCustomersViewController.swift */; };
+		F93B6802204A40FD00DA3754 /* DisplayBookings.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93B6801204A40FD00DA3754 /* DisplayBookings.xib */; };
+		F93B6804204A412B00DA3754 /* DisplayCustomers.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93B6803204A412B00DA3754 /* DisplayCustomers.xib */; };
+		F93B6806204A537100DA3754 /* CreateBook2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B6805204A537100DA3754 /* CreateBook2ViewController.swift */; };
+		F93B6808204A538A00DA3754 /* CreateBook2.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93B6807204A538A00DA3754 /* CreateBook2.xib */; };
+		F93B680A204A54C400DA3754 /* CreateBook3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B6809204A54C400DA3754 /* CreateBook3ViewController.swift */; };
+		F93B680C204A54D400DA3754 /* CreateBook3.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93B680B204A54D400DA3754 /* CreateBook3.xib */; };
+		F93B680E204A55B500DA3754 /* CreateBook4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B680D204A55B500DA3754 /* CreateBook4ViewController.swift */; };
+		F93B6810204A55C800DA3754 /* CreateBook4.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93B680F204A55C800DA3754 /* CreateBook4.xib */; };
+		F93B6812204A71E800DA3754 /* SearchBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B6811204A71E800DA3754 /* SearchBookingViewController.swift */; };
+		F93B6814204A720D00DA3754 /* DeleteBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B6813204A720D00DA3754 /* DeleteBookingViewController.swift */; };
+		F93B6816204A721E00DA3754 /* DeleteBooking.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93B6815204A721E00DA3754 /* DeleteBooking.xib */; };
+		F93B6818204A722F00DA3754 /* SearchBooking.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93B6817204A722F00DA3754 /* SearchBooking.xib */; };
+		F93B681A204A72D800DA3754 /* SearchBooking2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B6819204A72D700DA3754 /* SearchBooking2ViewController.swift */; };
+		F93B681C204A72EA00DA3754 /* SearchBooking2.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93B681B204A72EA00DA3754 /* SearchBooking2.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F93B67CD2049F9E800DA3754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F93B67B02049F9E800DA3754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F93B67B72049F9E800DA3754;
+			remoteInfo = Assignment_6;
+		};
+		F93B67D82049F9E800DA3754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F93B67B02049F9E800DA3754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F93B67B72049F9E800DA3754;
+			remoteInfo = Assignment_6;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F93B67B82049F9E800DA3754 /* Assignment_6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment_6.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F93B67BB2049F9E800DA3754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F93B67BD2049F9E800DA3754 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F93B67C22049F9E800DA3754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F93B67C52049F9E800DA3754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F93B67C72049F9E800DA3754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F93B67CC2049F9E800DA3754 /* Assignment_6Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment_6Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F93B67D02049F9E800DA3754 /* Assignment_6Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_6Tests.swift; sourceTree = "<group>"; };
+		F93B67D22049F9E800DA3754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F93B67D72049F9E800DA3754 /* Assignment_6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment_6UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F93B67DB2049F9E800DA3754 /* Assignment_6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_6UITests.swift; sourceTree = "<group>"; };
+		F93B67DD2049F9E800DA3754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F93B67E92049FA5900DA3754 /* Main.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Main.xib; sourceTree = "<group>"; };
+		F93B67EB2049FFE400DA3754 /* CreateCustViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCustViewController.swift; sourceTree = "<group>"; };
+		F93B67ED204A007E00DA3754 /* CreateCustomer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateCustomer.xib; sourceTree = "<group>"; };
+		F93B67EF204A247900DA3754 /* CreateRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomViewController.swift; sourceTree = "<group>"; };
+		F93B67F1204A248F00DA3754 /* CreateRoom.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateRoom.xib; sourceTree = "<group>"; };
+		F93B67F3204A2EA000DA3754 /* CreateBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBookingViewController.swift; sourceTree = "<group>"; };
+		F93B67F7204A33F400DA3754 /* CreateBooking.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateBooking.xib; sourceTree = "<group>"; };
+		F93B67F9204A367400DA3754 /* DisplayRoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayRoomsViewController.swift; sourceTree = "<group>"; };
+		F93B67FB204A368500DA3754 /* DisplayRooms.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisplayRooms.xib; sourceTree = "<group>"; };
+		F93B67FD204A408800DA3754 /* DisplayBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBookingViewController.swift; sourceTree = "<group>"; };
+		F93B67FF204A409B00DA3754 /* DisplayCustomersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayCustomersViewController.swift; sourceTree = "<group>"; };
+		F93B6801204A40FD00DA3754 /* DisplayBookings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisplayBookings.xib; sourceTree = "<group>"; };
+		F93B6803204A412B00DA3754 /* DisplayCustomers.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisplayCustomers.xib; sourceTree = "<group>"; };
+		F93B6805204A537100DA3754 /* CreateBook2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBook2ViewController.swift; sourceTree = "<group>"; };
+		F93B6807204A538A00DA3754 /* CreateBook2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateBook2.xib; sourceTree = "<group>"; };
+		F93B6809204A54C400DA3754 /* CreateBook3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBook3ViewController.swift; sourceTree = "<group>"; };
+		F93B680B204A54D400DA3754 /* CreateBook3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateBook3.xib; sourceTree = "<group>"; };
+		F93B680D204A55B500DA3754 /* CreateBook4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBook4ViewController.swift; sourceTree = "<group>"; };
+		F93B680F204A55C800DA3754 /* CreateBook4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateBook4.xib; sourceTree = "<group>"; };
+		F93B6811204A71E800DA3754 /* SearchBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookingViewController.swift; sourceTree = "<group>"; };
+		F93B6813204A720D00DA3754 /* DeleteBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteBookingViewController.swift; sourceTree = "<group>"; };
+		F93B6815204A721E00DA3754 /* DeleteBooking.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteBooking.xib; sourceTree = "<group>"; };
+		F93B6817204A722F00DA3754 /* SearchBooking.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBooking.xib; sourceTree = "<group>"; };
+		F93B6819204A72D700DA3754 /* SearchBooking2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooking2ViewController.swift; sourceTree = "<group>"; };
+		F93B681B204A72EA00DA3754 /* SearchBooking2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBooking2.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F93B67B52049F9E800DA3754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F93B67C92049F9E800DA3754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F93B67D42049F9E800DA3754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F93B67AF2049F9E800DA3754 = {
+			isa = PBXGroup;
+			children = (
+				F93B67BA2049F9E800DA3754 /* Assignment_6 */,
+				F93B67CF2049F9E800DA3754 /* Assignment_6Tests */,
+				F93B67DA2049F9E800DA3754 /* Assignment_6UITests */,
+				F93B67B92049F9E800DA3754 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F93B67B92049F9E800DA3754 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F93B67B82049F9E800DA3754 /* Assignment_6.app */,
+				F93B67CC2049F9E800DA3754 /* Assignment_6Tests.xctest */,
+				F93B67D72049F9E800DA3754 /* Assignment_6UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F93B67BA2049F9E800DA3754 /* Assignment_6 */ = {
+			isa = PBXGroup;
+			children = (
+				F93B67BB2049F9E800DA3754 /* AppDelegate.swift */,
+				F93B67BD2049F9E800DA3754 /* ViewController.swift */,
+				F93B67C22049F9E800DA3754 /* Assets.xcassets */,
+				F93B67E92049FA5900DA3754 /* Main.xib */,
+				F93B6811204A71E800DA3754 /* SearchBookingViewController.swift */,
+				F93B6813204A720D00DA3754 /* DeleteBookingViewController.swift */,
+				F93B6815204A721E00DA3754 /* DeleteBooking.xib */,
+				F93B6817204A722F00DA3754 /* SearchBooking.xib */,
+				F93B6819204A72D700DA3754 /* SearchBooking2ViewController.swift */,
+				F93B681B204A72EA00DA3754 /* SearchBooking2.xib */,
+				F93B67F3204A2EA000DA3754 /* CreateBookingViewController.swift */,
+				F93B6805204A537100DA3754 /* CreateBook2ViewController.swift */,
+				F93B6807204A538A00DA3754 /* CreateBook2.xib */,
+				F93B67F7204A33F400DA3754 /* CreateBooking.xib */,
+				F93B6809204A54C400DA3754 /* CreateBook3ViewController.swift */,
+				F93B680B204A54D400DA3754 /* CreateBook3.xib */,
+				F93B680D204A55B500DA3754 /* CreateBook4ViewController.swift */,
+				F93B680F204A55C800DA3754 /* CreateBook4.xib */,
+				F93B67FD204A408800DA3754 /* DisplayBookingViewController.swift */,
+				F93B67FF204A409B00DA3754 /* DisplayCustomersViewController.swift */,
+				F93B67F1204A248F00DA3754 /* CreateRoom.xib */,
+				F93B67EF204A247900DA3754 /* CreateRoomViewController.swift */,
+				F93B67EB2049FFE400DA3754 /* CreateCustViewController.swift */,
+				F93B67F9204A367400DA3754 /* DisplayRoomsViewController.swift */,
+				F93B67FB204A368500DA3754 /* DisplayRooms.xib */,
+				F93B67ED204A007E00DA3754 /* CreateCustomer.xib */,
+				F93B6801204A40FD00DA3754 /* DisplayBookings.xib */,
+				F93B6803204A412B00DA3754 /* DisplayCustomers.xib */,
+				F93B67C42049F9E800DA3754 /* LaunchScreen.storyboard */,
+				F93B67C72049F9E800DA3754 /* Info.plist */,
+			);
+			path = Assignment_6;
+			sourceTree = "<group>";
+		};
+		F93B67CF2049F9E800DA3754 /* Assignment_6Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F93B67D02049F9E800DA3754 /* Assignment_6Tests.swift */,
+				F93B67D22049F9E800DA3754 /* Info.plist */,
+			);
+			path = Assignment_6Tests;
+			sourceTree = "<group>";
+		};
+		F93B67DA2049F9E800DA3754 /* Assignment_6UITests */ = {
+			isa = PBXGroup;
+			children = (
+				F93B67DB2049F9E800DA3754 /* Assignment_6UITests.swift */,
+				F93B67DD2049F9E800DA3754 /* Info.plist */,
+			);
+			path = Assignment_6UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F93B67B72049F9E800DA3754 /* Assignment_6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F93B67E02049F9E800DA3754 /* Build configuration list for PBXNativeTarget "Assignment_6" */;
+			buildPhases = (
+				F93B67B42049F9E800DA3754 /* Sources */,
+				F93B67B52049F9E800DA3754 /* Frameworks */,
+				F93B67B62049F9E800DA3754 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Assignment_6;
+			productName = Assignment_6;
+			productReference = F93B67B82049F9E800DA3754 /* Assignment_6.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F93B67CB2049F9E800DA3754 /* Assignment_6Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F93B67E32049F9E800DA3754 /* Build configuration list for PBXNativeTarget "Assignment_6Tests" */;
+			buildPhases = (
+				F93B67C82049F9E800DA3754 /* Sources */,
+				F93B67C92049F9E800DA3754 /* Frameworks */,
+				F93B67CA2049F9E800DA3754 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F93B67CE2049F9E800DA3754 /* PBXTargetDependency */,
+			);
+			name = Assignment_6Tests;
+			productName = Assignment_6Tests;
+			productReference = F93B67CC2049F9E800DA3754 /* Assignment_6Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F93B67D62049F9E800DA3754 /* Assignment_6UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F93B67E62049F9E800DA3754 /* Build configuration list for PBXNativeTarget "Assignment_6UITests" */;
+			buildPhases = (
+				F93B67D32049F9E800DA3754 /* Sources */,
+				F93B67D42049F9E800DA3754 /* Frameworks */,
+				F93B67D52049F9E800DA3754 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F93B67D92049F9E800DA3754 /* PBXTargetDependency */,
+			);
+			name = Assignment_6UITests;
+			productName = Assignment_6UITests;
+			productReference = F93B67D72049F9E800DA3754 /* Assignment_6UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F93B67B02049F9E800DA3754 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Nikunj Singh";
+				TargetAttributes = {
+					F93B67B72049F9E800DA3754 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F93B67CB2049F9E800DA3754 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F93B67B72049F9E800DA3754;
+					};
+					F93B67D62049F9E800DA3754 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F93B67B72049F9E800DA3754;
+					};
+				};
+			};
+			buildConfigurationList = F93B67B32049F9E800DA3754 /* Build configuration list for PBXProject "Assignment_6" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F93B67AF2049F9E800DA3754;
+			productRefGroup = F93B67B92049F9E800DA3754 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F93B67B72049F9E800DA3754 /* Assignment_6 */,
+				F93B67CB2049F9E800DA3754 /* Assignment_6Tests */,
+				F93B67D62049F9E800DA3754 /* Assignment_6UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F93B67B62049F9E800DA3754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F93B6816204A721E00DA3754 /* DeleteBooking.xib in Resources */,
+				F93B67EA2049FA5900DA3754 /* Main.xib in Resources */,
+				F93B680C204A54D400DA3754 /* CreateBook3.xib in Resources */,
+				F93B67F2204A248F00DA3754 /* CreateRoom.xib in Resources */,
+				F93B67C62049F9E800DA3754 /* LaunchScreen.storyboard in Resources */,
+				F93B6804204A412B00DA3754 /* DisplayCustomers.xib in Resources */,
+				F93B67F8204A33F400DA3754 /* CreateBooking.xib in Resources */,
+				F93B6808204A538A00DA3754 /* CreateBook2.xib in Resources */,
+				F93B6810204A55C800DA3754 /* CreateBook4.xib in Resources */,
+				F93B67EE204A007E00DA3754 /* CreateCustomer.xib in Resources */,
+				F93B681C204A72EA00DA3754 /* SearchBooking2.xib in Resources */,
+				F93B67C32049F9E800DA3754 /* Assets.xcassets in Resources */,
+				F93B6818204A722F00DA3754 /* SearchBooking.xib in Resources */,
+				F93B6802204A40FD00DA3754 /* DisplayBookings.xib in Resources */,
+				F93B67FC204A368500DA3754 /* DisplayRooms.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F93B67CA2049F9E800DA3754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F93B67D52049F9E800DA3754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F93B67B42049F9E800DA3754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F93B6806204A537100DA3754 /* CreateBook2ViewController.swift in Sources */,
+				F93B680E204A55B500DA3754 /* CreateBook4ViewController.swift in Sources */,
+				F93B6812204A71E800DA3754 /* SearchBookingViewController.swift in Sources */,
+				F93B6814204A720D00DA3754 /* DeleteBookingViewController.swift in Sources */,
+				F93B67FE204A408800DA3754 /* DisplayBookingViewController.swift in Sources */,
+				F93B6800204A409B00DA3754 /* DisplayCustomersViewController.swift in Sources */,
+				F93B67EC2049FFE400DA3754 /* CreateCustViewController.swift in Sources */,
+				F93B67F4204A2EA000DA3754 /* CreateBookingViewController.swift in Sources */,
+				F93B67F0204A247900DA3754 /* CreateRoomViewController.swift in Sources */,
+				F93B681A204A72D800DA3754 /* SearchBooking2ViewController.swift in Sources */,
+				F93B67BE2049F9E800DA3754 /* ViewController.swift in Sources */,
+				F93B67FA204A367400DA3754 /* DisplayRoomsViewController.swift in Sources */,
+				F93B67BC2049F9E800DA3754 /* AppDelegate.swift in Sources */,
+				F93B680A204A54C400DA3754 /* CreateBook3ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F93B67C82049F9E800DA3754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F93B67D12049F9E800DA3754 /* Assignment_6Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F93B67D32049F9E800DA3754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F93B67DC2049F9E800DA3754 /* Assignment_6UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F93B67CE2049F9E800DA3754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F93B67B72049F9E800DA3754 /* Assignment_6 */;
+			targetProxy = F93B67CD2049F9E800DA3754 /* PBXContainerItemProxy */;
+		};
+		F93B67D92049F9E800DA3754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F93B67B72049F9E800DA3754 /* Assignment_6 */;
+			targetProxy = F93B67D82049F9E800DA3754 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F93B67C42049F9E800DA3754 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F93B67C52049F9E800DA3754 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F93B67DE2049F9E800DA3754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F93B67DF2049F9E800DA3754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F93B67E12049F9E800DA3754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKK826C3C8;
+				INFOPLIST_FILE = Assignment_6/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nikunj.Assignment-6";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F93B67E22049F9E800DA3754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKK826C3C8;
+				INFOPLIST_FILE = Assignment_6/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nikunj.Assignment-6";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F93B67E42049F9E800DA3754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKK826C3C8;
+				INFOPLIST_FILE = Assignment_6Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nikunj.Assignment-6Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Assignment_6.app/Assignment_6";
+			};
+			name = Debug;
+		};
+		F93B67E52049F9E800DA3754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKK826C3C8;
+				INFOPLIST_FILE = Assignment_6Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nikunj.Assignment-6Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Assignment_6.app/Assignment_6";
+			};
+			name = Release;
+		};
+		F93B67E72049F9E800DA3754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKK826C3C8;
+				INFOPLIST_FILE = Assignment_6UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nikunj.Assignment-6UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Assignment_6;
+			};
+			name = Debug;
+		};
+		F93B67E82049F9E800DA3754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKK826C3C8;
+				INFOPLIST_FILE = Assignment_6UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nikunj.Assignment-6UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Assignment_6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F93B67B32049F9E800DA3754 /* Build configuration list for PBXProject "Assignment_6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F93B67DE2049F9E800DA3754 /* Debug */,
+				F93B67DF2049F9E800DA3754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F93B67E02049F9E800DA3754 /* Build configuration list for PBXNativeTarget "Assignment_6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F93B67E12049F9E800DA3754 /* Debug */,
+				F93B67E22049F9E800DA3754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F93B67E32049F9E800DA3754 /* Build configuration list for PBXNativeTarget "Assignment_6Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F93B67E42049F9E800DA3754 /* Debug */,
+				F93B67E52049F9E800DA3754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F93B67E62049F9E800DA3754 /* Build configuration list for PBXNativeTarget "Assignment_6UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F93B67E72049F9E800DA3754 /* Debug */,
+				F93B67E82049F9E800DA3754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F93B67B02049F9E800DA3754 /* Project object */;
+}
