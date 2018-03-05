@@ -79,6 +79,22 @@ class ViewController: UIViewController {
         
         self.present(deleteBookingVC, animated: true, completion: nil)
         
+    }
+    
+    @IBAction func deleteRoom(_ sender: UIButton) {
+        let deleteRoomVC = DeleteRoomViewController(nibName: "DeleteRoom", bundle: nil)
+        
+        self.present(deleteRoomVC, animated: true, completion: nil)
+        
+        
+    }
+    
+    
+    @IBAction func deleteCustomer(_ sender: UIButton) {
+        let deleteCustVC = DeleteCustomerViewController(nibName: "DeleteCustomer", bundle: nil)
+        
+        self.present(deleteCustVC, animated: true, completion: nil)
+        
         
     }
     

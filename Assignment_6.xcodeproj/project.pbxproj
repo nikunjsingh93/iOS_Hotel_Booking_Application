@@ -38,6 +38,11 @@
 		F93B6818204A722F00DA3754 /* SearchBooking.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93B6817204A722F00DA3754 /* SearchBooking.xib */; };
 		F93B681A204A72D800DA3754 /* SearchBooking2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B6819204A72D700DA3754 /* SearchBooking2ViewController.swift */; };
 		F93B681C204A72EA00DA3754 /* SearchBooking2.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93B681B204A72EA00DA3754 /* SearchBooking2.xib */; };
+		F9AB8029204DAF2600D7835D /* Assignment_6.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9AB8027204DAF2600D7835D /* Assignment_6.xcdatamodeld */; };
+		F9AB802B204DAFDF00D7835D /* DeleteRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AB802A204DAFDF00D7835D /* DeleteRoomViewController.swift */; };
+		F9AB802D204DAFF300D7835D /* DeleteCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AB802C204DAFF300D7835D /* DeleteCustomerViewController.swift */; };
+		F9AB8031204DB01F00D7835D /* DeleteRoom.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9AB8030204DB01F00D7835D /* DeleteRoom.xib */; };
+		F9AB8033204DB03300D7835D /* DeleteCustomer.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9AB8032204DB03300D7835D /* DeleteCustomer.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +100,11 @@
 		F93B6817204A722F00DA3754 /* SearchBooking.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBooking.xib; sourceTree = "<group>"; };
 		F93B6819204A72D700DA3754 /* SearchBooking2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooking2ViewController.swift; sourceTree = "<group>"; };
 		F93B681B204A72EA00DA3754 /* SearchBooking2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBooking2.xib; sourceTree = "<group>"; };
+		F9AB8028204DAF2600D7835D /* Assignment_6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Assignment_6.xcdatamodel; sourceTree = "<group>"; };
+		F9AB802A204DAFDF00D7835D /* DeleteRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRoomViewController.swift; sourceTree = "<group>"; };
+		F9AB802C204DAFF300D7835D /* DeleteCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteCustomerViewController.swift; sourceTree = "<group>"; };
+		F9AB8030204DB01F00D7835D /* DeleteRoom.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteRoom.xib; sourceTree = "<group>"; };
+		F9AB8032204DB03300D7835D /* DeleteCustomer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteCustomer.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +135,7 @@
 		F93B67AF2049F9E800DA3754 = {
 			isa = PBXGroup;
 			children = (
+				F9AB8027204DAF2600D7835D /* Assignment_6.xcdatamodeld */,
 				F93B67BA2049F9E800DA3754 /* Assignment_6 */,
 				F93B67CF2049F9E800DA3754 /* Assignment_6Tests */,
 				F93B67DA2049F9E800DA3754 /* Assignment_6UITests */,
@@ -145,6 +156,8 @@
 		F93B67BA2049F9E800DA3754 /* Assignment_6 */ = {
 			isa = PBXGroup;
 			children = (
+				F9AB8030204DB01F00D7835D /* DeleteRoom.xib */,
+				F9AB8032204DB03300D7835D /* DeleteCustomer.xib */,
 				F93B67BB2049F9E800DA3754 /* AppDelegate.swift */,
 				F93B67BD2049F9E800DA3754 /* ViewController.swift */,
 				F93B67C22049F9E800DA3754 /* Assets.xcassets */,
@@ -175,6 +188,8 @@
 				F93B6803204A412B00DA3754 /* DisplayCustomers.xib */,
 				F93B67C42049F9E800DA3754 /* LaunchScreen.storyboard */,
 				F93B67C72049F9E800DA3754 /* Info.plist */,
+				F9AB802A204DAFDF00D7835D /* DeleteRoomViewController.swift */,
+				F9AB802C204DAFF300D7835D /* DeleteCustomerViewController.swift */,
 			);
 			path = Assignment_6;
 			sourceTree = "<group>";
@@ -315,10 +330,12 @@
 				F93B6810204A55C800DA3754 /* CreateBook4.xib in Resources */,
 				F93B67EE204A007E00DA3754 /* CreateCustomer.xib in Resources */,
 				F93B681C204A72EA00DA3754 /* SearchBooking2.xib in Resources */,
+				F9AB8033204DB03300D7835D /* DeleteCustomer.xib in Resources */,
 				F93B67C32049F9E800DA3754 /* Assets.xcassets in Resources */,
 				F93B6818204A722F00DA3754 /* SearchBooking.xib in Resources */,
 				F93B6802204A40FD00DA3754 /* DisplayBookings.xib in Resources */,
 				F93B67FC204A368500DA3754 /* DisplayRooms.xib in Resources */,
+				F9AB8031204DB01F00D7835D /* DeleteRoom.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,10 +363,13 @@
 				F93B6806204A537100DA3754 /* CreateBook2ViewController.swift in Sources */,
 				F93B680E204A55B500DA3754 /* CreateBook4ViewController.swift in Sources */,
 				F93B6812204A71E800DA3754 /* SearchBookingViewController.swift in Sources */,
+				F9AB8029204DAF2600D7835D /* Assignment_6.xcdatamodeld in Sources */,
 				F93B6814204A720D00DA3754 /* DeleteBookingViewController.swift in Sources */,
 				F93B67FE204A408800DA3754 /* DisplayBookingViewController.swift in Sources */,
 				F93B6800204A409B00DA3754 /* DisplayCustomersViewController.swift in Sources */,
 				F93B67EC2049FFE400DA3754 /* CreateCustViewController.swift in Sources */,
+				F9AB802D204DAFF300D7835D /* DeleteCustomerViewController.swift in Sources */,
+				F9AB802B204DAFDF00D7835D /* DeleteRoomViewController.swift in Sources */,
 				F93B67F4204A2EA000DA3754 /* CreateBookingViewController.swift in Sources */,
 				F93B67F0204A247900DA3754 /* CreateRoomViewController.swift in Sources */,
 				F93B681A204A72D800DA3754 /* SearchBooking2ViewController.swift in Sources */,
@@ -646,6 +666,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F9AB8027204DAF2600D7835D /* Assignment_6.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F9AB8028204DAF2600D7835D /* Assignment_6.xcdatamodel */,
+			);
+			currentVersion = F9AB8028204DAF2600D7835D /* Assignment_6.xcdatamodel */;
+			path = Assignment_6.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F93B67B02049F9E800DA3754 /* Project object */;
 }

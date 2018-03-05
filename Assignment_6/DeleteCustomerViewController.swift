@@ -1,21 +1,21 @@
 //
-//  DisplayCustomersViewController.swift
+//  DeleteCustomerViewController.swift
 //  Assignment_6
 //
-//  Created by Nikunj Singh on 3/2/18.
+//  Created by Nikunj Singh on 3/5/18.
 //  Copyright © 2018 Nikunj Singh. All rights reserved.
 //
 
 import UIKit
 
-class DisplayCustomersViewController: UIViewController {
+class DeleteCustomerViewController: UIViewController {
 
-    @IBOutlet weak var DisplayCustomersTextView: UITextView!
+    @IBOutlet weak var custDeleteTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-         self.hideKeyboard()
-        DisplayCustomers()
+        self.hideKeyboard()
         // Do any additional setup after loading the view.
     }
 
@@ -25,45 +25,40 @@ class DisplayCustomersViewController: UIViewController {
     }
     
     @IBAction func back(_ sender: UIBarButtonItem) {
+        
         self.dismiss(animated: true, completion: nil)
         
     }
     
-    func DisplayCustomers() {
+    
+    @IBAction func deleteCustFunc(_ sender: UIBarButtonItem) {
         
-       
-        var someStrings2 = [String]()
+        let custNameDel = custDeleteTextField.text!
         
         
-        for test2 in custArray {
+        var i = 0
+        
+        for m in custArray {
             
-            someStrings2.append("------")
-            
-            
-            someStrings2.append("Name: \(test2.custName!)")
-            someStrings2.append("Address: \(test2.custAddress!)")
-            someStrings2.append("Phone Number: \(test2.custPhoneNumber!)")
-            
-            
-            someStrings2.append("------")
+            if (custNameDel == m.custName) {
+                
+                custArray.remove(at: i)
+                
+                
+            }
+            i = i + 1
             
         }
         
+        let alertController = UIAlertController(title: "Success!", message:
+            "Customer Deleted", preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default,handler: nil))
         
+        self.present(alertController, animated: true, completion: nil)
         
-        var text2 = ""
-        var selectedArray2 = [String](someStrings2)
-        for index in 0..<selectedArray2.count {
-            text2 += "\(selectedArray2[index])\n"
-        }
-        
-        DisplayCustomersTextView.text = text2
-        
-       
         
     }
     
-
     /*
     // MARK: - Navigation
 

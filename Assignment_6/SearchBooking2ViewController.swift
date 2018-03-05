@@ -14,6 +14,7 @@ class SearchBooking2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+         self.hideKeyboard()
         searchBooking()
         // Do any additional setup after loading the view.
     }

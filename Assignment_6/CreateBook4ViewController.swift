@@ -132,6 +132,14 @@ class CreateBook4ViewController: UIViewController {
                     
                     bookArray.append(booking)
                     
+//                    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+//                    let book = Booking(context: context) // Link Task & Context
+//                    book
+//
+//                    // Save the data to coredata
+//                    (UIApplication.shared.delegate as! AppDelegate).saveContext()
+
+                    
                     let alertController = UIAlertController(title: "Success!", message:
                         "Booking has been Added", preferredStyle: UIAlertControllerStyle.alert)
                     alertController.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default,handler: nil))

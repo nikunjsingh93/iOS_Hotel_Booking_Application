@@ -15,6 +15,7 @@ class DisplayBookingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+         self.hideKeyboard()
         DisplayBooking()
 
         // Do any additional setup after loading the view.
