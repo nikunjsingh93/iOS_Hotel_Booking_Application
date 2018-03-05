@@ -4,7 +4,7 @@ iPhone Application of Hotel Booking Application with features of a Hotel Booking
 
 # Screenshots
 
-![main](https://user-images.githubusercontent.com/31995471/36950124-4dcd1f5c-1fbf-11e8-8548-6d89ba4af65a.jpeg)
+![main](https://user-images.githubusercontent.com/31995471/36990287-3e16762c-2072-11e8-85ce-8725832cffa5.jpeg)
 
 ![createroom](https://user-images.githubusercontent.com/31995471/36950121-4d9d19c4-1fbf-11e8-878e-621a7811d078.jpeg)
 
