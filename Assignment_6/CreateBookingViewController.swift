@@ -30,7 +30,7 @@ class CreateBookingViewController: UIViewController {
         
         let temp = bookingCustNameTextField.text!
         
-        for c in custArray {
+        for c in custArraydata {
             if (temp == c.custName) {
                 
                 custObject = c

@@ -74,8 +74,22 @@ class CreateCustViewController: UIViewController {
             let text3 = custAddressTextField.text!
             customer1obj.custAddress = text3
             
-            
+          
+        
             custArray.append(customer1obj)
+            
+            
+            
+            let custemp = Customers(context: context)
+            
+            custemp.custName = text
+            custemp.custPhoneNumber = text2
+            custemp.custAddress = text3
+            
+            appDelegate.saveContext()
+            
+            
+            
             
             let alertController = UIAlertController(title: "Success!", message:
                 "Customer Added", preferredStyle: UIAlertControllerStyle.alert)

@@ -32,7 +32,7 @@ class CreateBook2ViewController: UIViewController {
         let temp = bookingRoomNameTextField.text!
         
         
-        for r in roomArray {
+        for r in roomArraydata {
             if (r.roomName == temp ){
                 
                 if (r.roomType == "Single"){

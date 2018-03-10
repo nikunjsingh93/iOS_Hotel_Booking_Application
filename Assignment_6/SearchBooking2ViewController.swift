@@ -41,42 +41,50 @@ class SearchBooking2ViewController: UIViewController {
     
         var searchStrings = [String]()
         
-        
-        
-        for p in bookArray {
-            if(p.customerObj.custName == custSearch) {
+
+
+        for p in bookArraydata {
+            if(p.bookingCustName == custSearch) {
                 
+                let dateFormatter1 = DateFormatter()
+                dateFormatter1.dateFormat = "MM-dd-yyyy"
+                let dateString1 = dateFormatter1.string(from: p.bookingFrom!)
+                
+                let dateFormatter2 = DateFormatter()
+                dateFormatter2.dateFormat = "MM-dd-yyyy"
+                let dateString2 = dateFormatter2.string(from: p.bookingTo!)
+
                 searchStrings.append("------")
-                
+
                 searchStrings.append("Booking details for \(custSearch!) customer is :")
-                
+
                 searchStrings.append("Booking Name: \(p.bookingName!)")
-                
-                
-                searchStrings.append("Cutomer Name: \(p.customerObj.custName!)")
-                searchStrings.append("Address: \(p.customerObj.custAddress!)")
-                searchStrings.append("Phone Number: \(p.customerObj.custPhoneNumber!)")
-                
-                
-                searchStrings.append("Room Name: \(p.roomObj.roomName!)")
-                searchStrings.append("Room Booked From: \(p.roomObj.roomFrom!)")
-                searchStrings.append("Room Booked Till: \(p.roomObj.roomTo!)")
-                searchStrings.append("Room Price: \(p.roomObj.roomPrice!)")
-                searchStrings.append("Room Type: \(p.roomObj.roomType!)")
-                searchStrings.append("Other Customer Name: \(p.bokingOtherCust!)")
-                
+
+
+                searchStrings.append("Cutomer Name: \(p.bookingCustName!)")
+                searchStrings.append("Address: \(p.bookingCustAdd!)")
+                searchStrings.append("Phone Number: \(p.bookingCustPhone!)")
+
+
+                searchStrings.append("Room Name: \(p.bookingRoomName!)")
+                searchStrings.append("Room Booked From: \(dateString1)")
+                searchStrings.append("Room Booked Till: \(dateString2)")
+                searchStrings.append("Room Price: \(p.bookingRoomPrice!)")
+                searchStrings.append("Room Type: \(p.bookingRoomType!)")
+                searchStrings.append("Other Customer Name: \(p.bookingOtherCust!)")
+
                 searchStrings.append("------")
             }
         }
-        
+
         var text1 = ""
         var selectedArray1 = [String](searchStrings)
         for index in 0..<selectedArray1.count {
             text1 += "\(selectedArray1[index])\n"
         }
-        
+
         searchTextView.text = text1
-        
+
         
     
     }

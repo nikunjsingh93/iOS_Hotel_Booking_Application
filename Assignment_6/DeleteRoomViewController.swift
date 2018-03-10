@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class DeleteRoomViewController: UIViewController {
 
@@ -34,19 +35,46 @@ class DeleteRoomViewController: UIViewController {
         
         let roomNameDel = deleteRoomTextField.text!
         
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Rooms")
+        request.returnsObjectsAsFaults = false
+        var stringName : String  = String()
         
-        var i = 0
         
-        for m in roomArray {
-            
-            if (roomNameDel == m.roomName) {
-                
-                roomArray.remove(at: i)
+        do {
+            let result = try context.fetch(request)
+            for data in result as! [NSManagedObject] {
+                stringName  = data.value(forKey: "roomName") as! String
+                if stringName == roomNameDel{
+                    do {
+                        try context.delete(data)
+                        appDelegate.saveContext()
+                    } catch {
+                        print("Failed saving")
+                    }
+                    
+                }
                 
             }
-            i = i + 1
             
+        } catch {
+            
+            print("Failed")
         }
+        
+        
+        
+//        var i = 0
+//
+//        for m in roomArray {
+//
+//            if (roomNameDel == m.roomName) {
+//
+//                roomArray.remove(at: i)
+//
+//            }
+//            i = i + 1
+//
+//        }
         
         let alertController = UIAlertController(title: "Success!", message:
             "Room Deleted", preferredStyle: UIAlertControllerStyle.alert)

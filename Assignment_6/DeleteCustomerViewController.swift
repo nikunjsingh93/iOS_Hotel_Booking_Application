@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class DeleteCustomerViewController: UIViewController {
 
@@ -35,20 +36,50 @@ class DeleteCustomerViewController: UIViewController {
         
         let custNameDel = custDeleteTextField.text!
         
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Customers")
+        request.returnsObjectsAsFaults = false
+        var stringName : String  = String()
         
-        var i = 0
         
-        for m in custArray {
-            
-            if (custNameDel == m.custName) {
-                
-                custArray.remove(at: i)
-                
+        do {
+            let result = try context.fetch(request)
+            for data in result as! [NSManagedObject] {
+                stringName  = data.value(forKey: "custName") as! String
+                if stringName == custNameDel{
+                    do {
+                        try context.delete(data)
+                        appDelegate.saveContext()
+                    } catch {
+                        print("Failed saving")
+                    }
+                    
+                }
                 
             }
-            i = i + 1
             
+        } catch {
+            
+            print("Failed")
         }
+        
+        
+        
+        
+//        var i = 0
+//
+//        for m in custArraydata {
+//
+//            if (custNameDel == m.custName) {
+//
+//
+//
+//                custArraydata.remove(at: i)
+//
+//
+//            }
+//            i = i + 1
+//
+//        }
         
         let alertController = UIAlertController(title: "Success!", message:
             "Customer Deleted", preferredStyle: UIAlertControllerStyle.alert)

@@ -34,7 +34,7 @@ class CreateBook3ViewController: UIViewController {
         
         let temp = bookingOtherCustNameTextField.text!
         
-        for c in custArray {
+        for c in custArraydata {
             
             if(c.custName == temp) {
                 

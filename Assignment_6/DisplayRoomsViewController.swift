@@ -36,30 +36,62 @@ class DisplayRoomsViewController: UIViewController {
       
         var someStrings1 = [String]()
         
-        for test1 in roomArray {
+        
+        do {
+            roomArraydata = try context.fetch(Rooms.fetchRequest())
             
-            let dateFormatter1 = DateFormatter()
-            dateFormatter1.dateFormat = "MM-dd-yyyy"
-            let dateString1 = dateFormatter1.string(from: test1.roomFrom!)
+            for each in roomArraydata {
+                
+                let dateFormatter1 = DateFormatter()
+                dateFormatter1.dateFormat = "MM-dd-yyyy"
+                let dateString1 = dateFormatter1.string(from: each.roomFrom!)
+                
+                let dateFormatter2 = DateFormatter()
+                dateFormatter2.dateFormat = "MM-dd-yyyy"
+                let dateString2 = dateFormatter2.string(from: each.roomTo!)
+                
+                someStrings1.append("------")
+                
+                
+                someStrings1.append("Name: \(each.roomName!)")
+                someStrings1.append("Price: \(each.roomPrice!)")
+                someStrings1.append("Type: \(each.roomType!)")
+                someStrings1.append("Booked From: \(dateString1)")
+                someStrings1.append("Booked Till: \(dateString2)")
+                
+                someStrings1.append("------")
+            }
+        }
+        catch {
             
-            let dateFormatter2 = DateFormatter()
-            dateFormatter2.dateFormat = "MM-dd-yyyy"
-            let dateString2 = dateFormatter2.string(from: test1.roomTo!)
-            
-            someStrings1.append("------")
-            
-            
-            someStrings1.append("Name: \(test1.roomName!)")
-            someStrings1.append("Price: \(test1.roomPrice!)")
-            someStrings1.append("Type: \(test1.roomType!)")
-            someStrings1.append("Booked From: \(dateString1)")
-            someStrings1.append("Booked Till: \(dateString2)")
-            
-            
-            someStrings1.append("------")
-            
+            //handle
         }
         
+        
+//        for test1 in roomArray {
+//
+//            let dateFormatter1 = DateFormatter()
+//            dateFormatter1.dateFormat = "MM-dd-yyyy"
+//            let dateString1 = dateFormatter1.string(from: test1.roomFrom!)
+//
+//            let dateFormatter2 = DateFormatter()
+//            dateFormatter2.dateFormat = "MM-dd-yyyy"
+//            let dateString2 = dateFormatter2.string(from: test1.roomTo!)
+//
+//            someStrings1.append("------")
+//
+//
+//            someStrings1.append("Name: \(test1.roomName!)")
+//            someStrings1.append("Price: \(test1.roomPrice!)")
+//            someStrings1.append("Type: \(test1.roomType!)")
+//            someStrings1.append("Booked From: \(dateString1)")
+//            someStrings1.append("Booked Till: \(dateString2)")
+//
+//
+//            someStrings1.append("------")
+//
+//        }
+//
         
         
         var text1 = ""

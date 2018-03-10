@@ -17,7 +17,7 @@ class CreateRoomViewController: UIViewController {
     @IBOutlet weak var datePickerRoomTo: UIDatePicker!
     
     
-    var temp:String = ""
+    var temp:String = "Single"
     
     @IBAction func roomType(_ sender: UISegmentedControl) {
         
@@ -74,14 +74,31 @@ class CreateRoomViewController: UIViewController {
         
         dateRoomTo = dateFormatter.date(from: selectedDate2)
         
-        
-        
         room1obj.roomFrom = dateRoomFrom
         room1obj.roomTo = dateRoomTo
         
         
+//        roomArray.append(room1obj)
         
-        roomArray.append(room1obj)
+        
+        
+        
+        
+        let roomtemp = Rooms(context: context)
+        
+     
+        roomtemp.roomName = text
+        
+        roomtemp.roomType = temp
+        
+        roomtemp.roomPrice = text3
+        
+        roomtemp.roomFrom = dateRoomFrom
+        
+        roomtemp.roomTo = dateRoomTo
+        
+        
+        appDelegate.saveContext()
         
         
         let alertController = UIAlertController(title: "Success!", message:

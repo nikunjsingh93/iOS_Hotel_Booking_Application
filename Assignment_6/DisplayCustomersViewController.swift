@@ -31,23 +31,46 @@ class DisplayCustomersViewController: UIViewController {
     
     func DisplayCustomers() {
         
-       
+        
+        
         var someStrings2 = [String]()
+
         
-        
-        for test2 in custArray {
+        do {
+             custArraydata = try context.fetch(Customers.fetchRequest())
             
-            someStrings2.append("------")
-            
-            
-            someStrings2.append("Name: \(test2.custName!)")
-            someStrings2.append("Address: \(test2.custAddress!)")
-            someStrings2.append("Phone Number: \(test2.custPhoneNumber!)")
-            
-            
-            someStrings2.append("------")
-            
+            for each in custArraydata {
+                
+                someStrings2.append("------")
+                
+               someStrings2.append("Name: \(each.custName!)")
+               someStrings2.append("Address: \(each.custPhoneNumber!)")
+               someStrings2.append("Phone Number: \(each.custAddress!)")
+
+                someStrings2.append("------")
+            }
         }
+        catch {
+            
+            //handle
+        }
+       
+        
+    
+        
+//        for test2 in custArray {
+//
+//            someStrings2.append("------")
+//
+//
+//            someStrings2.append("Name: \(test2.custName!)")
+//            someStrings2.append("Address: \(test2.custAddress!)")
+//            someStrings2.append("Phone Number: \(test2.custPhoneNumber!)")
+//
+//
+//            someStrings2.append("------")
+//
+//        }
         
         
         

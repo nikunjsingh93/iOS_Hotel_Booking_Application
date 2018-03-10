@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class CreateBook4ViewController: UIViewController {
     @IBOutlet weak var bookingFromDPicker: UIDatePicker!
@@ -80,7 +81,7 @@ class CreateBook4ViewController: UIViewController {
         
         let tempRoomName = bookingRoomNameGlobal
         
-        outer: for e in roomArray {
+        outer: for e in roomArraydata {
             if(e.roomName == tempRoomName) {
                 
                 if (date1n?.isBetweeen(date: e.roomFrom!, andDate: e.roomTo!))! || date2n?.isBetweeen(date: e.roomFrom!, andDate: e.roomTo!) == true {
@@ -117,27 +118,42 @@ class CreateBook4ViewController: UIViewController {
                     
                     print("Room \(e.roomName!) Booked, Moving On")
                     
-                    let booking = Booking()
-                    
-                    booking.bookingName = bookingNameGlobal
-                    
-                    booking.bokingOtherCust = bookingOtherCustNameGlobal
-                    
-                    booking.customerObj = custObject
-                    
-                    booking.roomObj = roomObject
-                    
-                    booking.roomObj.roomFrom! = date1n!
-                    booking.roomObj.roomTo! = date2n!
-                    
-                    bookArray.append(booking)
-                    
-//                    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-//                    let book = Booking(context: context) // Link Task & Context
-//                    book
+//                    let booking = Booking()
 //
-//                    // Save the data to coredata
-//                    (UIApplication.shared.delegate as! AppDelegate).saveContext()
+//                    booking.bookingName = bookingNameGlobal
+//
+//                    booking.bokingOtherCust = bookingOtherCustNameGlobal
+//
+//                    booking.customerObj = custObject
+//
+//                    booking.roomObj = roomObject
+//
+//                    booking.roomObj.roomFrom! = date1n!
+//                    booking.roomObj.roomTo! = date2n!
+//
+//                    bookArray.append(booking)
+                    
+                    
+                    let book = Bookings(context: context)
+                    
+                    
+                    book.bookingName = bookingNameGlobal
+                    book.bookingOtherCust = bookingOtherCustNameGlobal
+                    book.bookingFrom = date1n!
+                    book.bookingTo = date2n!
+                    
+                    book.bookingCustName = custObject.custName
+                    book.bookingCustPhone = custObject.custPhoneNumber
+                    book.bookingCustAdd = custObject.custAddress
+                    
+                    book.bookingRoomName = roomObject.roomName
+                    book.bookingRoomType = roomObject.roomType
+                    book.bookingRoomPrice = roomObject.roomPrice
+                    
+                    
+                    appDelegate.saveContext()
+                    
+                    
 
                     
                     let alertController = UIAlertController(title: "Success!", message:

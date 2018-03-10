@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class DeleteBookingViewController: UIViewController {
 
@@ -32,20 +33,46 @@ class DeleteBookingViewController: UIViewController {
         
         let bookNameDel = deleteNameTextField.text!
         
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Bookings")
+        request.returnsObjectsAsFaults = false
+        var stringName : String  = String()
         
-        var i = 0
         
-        for m in bookArray {
-            
-            if (bookNameDel == m.bookingName) {
-                
-                bookArray.remove(at: i)
-                
+        do {
+            let result = try context.fetch(request)
+            for data in result as! [NSManagedObject] {
+                stringName  = data.value(forKey: "bookingName") as! String
+                if stringName == bookNameDel{
+                    do {
+                        try context.delete(data)
+                        appDelegate.saveContext()
+                    } catch {
+                        print("Failed saving")
+                    }
+                    
+                }
                 
             }
-            i = i + 1
             
+        } catch {
+            
+            print("Failed")
         }
+        
+        
+//        var i = 0
+//
+//        for m in bookArray {
+//
+//            if (bookNameDel == m.bookingName) {
+//
+//                bookArray.remove(at: i)
+//
+//
+//            }
+//            i = i + 1
+//
+//        }
         
         let alertController = UIAlertController(title: "Success!", message:
             "Booking Deleted", preferredStyle: UIAlertControllerStyle.alert)
